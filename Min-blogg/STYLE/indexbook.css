@@ -1,0 +1,102 @@
+@font-face {
+    font-family: secular-one;
+    src: url("../FONTS/SecularOne-Regular.ttf")
+}
+
+
+nav{
+    height: 100px;
+    background-color:#050505;;
+    width: 100%;
+    position: relative; 
+    text-align: center; }
+
+.name-of-website {
+    color: red;
+    font-family: secular-one;
+    letter-spacing: 1px;
+    word-spacing: 1.4px;
+    font-weight: 400;
+    font-size: 27px;
+    position: absolute;
+    text-align: left;
+    margin: 0px;
+    margin-left: 3vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+    ul {
+        position: absolute;
+        width: 100vw;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0px;
+    }
+
+    li {
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center; }
+
+    
+    a {
+        font-size: 24px;
+        color: blue ;
+        text-decoration: none; 
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-family: 'Secular One', sans-serif;
+    }
+
+    a:hover{
+        color: #F0F2EF;
+        margin: 20px;
+        
+    }
+
+
+   body {
+    background-color: #050505; 
+    width: 100%;
+   }
+
+   .wrapper {
+        text-align: center;
+        width: 100%; 
+   }
+
+   .container1 {
+       background-color: red;
+       width: 20vw;
+       height: 40vh;
+       position: relative;
+       display: inline-block;
+
+   }
+
+   .container2 {
+        background-color: blue;
+        width: 20vw;
+        height: 40vh;
+        position:relative;
+        display: inline-block;
+    
+    }
+
+    .container3 {
+        background-color: yellow;
+        width: 20vw;
+        height: 40vh;
+        position: relative;
+        display: inline-block;
+    
+    }
+    .container4 {
+        background-color: green;
+        width: 20vw;
+        height: 40vh;
+        position:relative;
+        display: inline-block;
+        
+    }
