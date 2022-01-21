@@ -1,0 +1,482 @@
+@charset "UTF-8";
+/* Applies to the entire body of the HTML document (except where overridden by more specific
+selectors). */
+.name-of-website {
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+  margin-top: -10px;
+}
+.name-of-website--title {
+  /*font-family: 'Roboto', sans-serif;
+  font-family: 'Secular One', sans-serif;
+  font-family: 'Sonsie One', cursive;*/
+}
+.name-of-website--title h1 {
+  /* color: /*red;#e50000;
+   color: #D91C1F;      
+   font-size: 15vh;
+   text-align:center;
+   font-family: 'Staatliches', cursive;*/
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15vh;
+  line-height: 98px;
+  text-align: center;
+  color: #2B2B2B;
+  margin-bottom: 35px;
+}
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .name-of-website--title {
+    font-size: 56px;
+  }
+}
+.name-of-website--title h3 {
+  color: #E5383B;
+  font-size: 27px;
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .name-of-website--title h3 {
+    font-size: 24px;
+  }
+}
+
+/*nav{
+    height: 60px;
+    background-color:#050505;
+    width: 100%;
+    position: relative; 
+    text-align: center; 
+
+    ul {
+        position: absolute;
+        width: 90vw;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0px;
+    }
+
+    li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center; */
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-right: 30vw;
+  margin-left: 30vw;
+  list-style: none;
+}
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .parent {
+    margin-right: 20vw;
+    margin-left: 20vw;
+  }
+}
+.parent .link1 {
+  flex-basis: auto;
+  order: 1;
+  margin: auto;
+}
+.parent .link2 {
+  flex-basis: auto;
+  order: 2;
+  margin: auto;
+}
+.parent .link3 {
+  flex-basis: auto;
+  order: 3;
+  margin: auto;
+}
+.parent a {
+  font-size: 14px;
+  color: #F0F2EF;
+  color: #B1A7A6;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+}
+.parent a:hover {
+  color: white;
+}
+
+@font-face {
+  font-family: secular-one;
+  src: url("../FONTS/SecularOne-Regular.ttf");
+}
+body, html {
+  min-height: 100%;
+  height: 100%;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  background-color: #F0F2EF;
+  background-color: #FFFFFF;
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 50px;
+}
+
+/* Applies to all <h1>...</h1> elements. */
+h1 {
+  /* font-size: 43px;
+   font-weight: normal;
+   margin-top: 30px;
+   margin-bottom: 0px;
+   color: red;
+   font-family: secular-one;
+  letter-spacing: 1px;
+  word-spacing: 1.4px;
+  font-weight: 400; */
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.08em;
+  color: red;
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: normal;
+  margin-top: 10px;
+  color: red;
+  font-family: Poppins;
+  font-weight: bold;
+}
+
+img {
+  width: 100vw;
+}
+
+p {
+  line-height: 2em;
+  text-indent: 50px;
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Applies to all elements with <... class="active"> specified. */
+.active {
+  background-color: red;
+  color: white;
+}
+
+.mainFlexBox {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #FFFFFF;
+  margin: auto;
+  width: 100%;
+}
+.mainFlexBox .headerBox {
+  display: flex;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+.mainFlexBox .navFlexBox {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  height: 10vh;
+  width: 40%;
+  background-color: #FFFFFF;
+  margin-top: 0px;
+  text-align: center;
+}
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .mainFlexBox .navFlexBox {
+    width: 100%;
+  }
+}
+.mainFlexBox .column-one {
+  background-color: #FFFFFF;
+  margin: 5px;
+  margin-left: 2px;
+  flex: 1;
+  justify-content: center;
+}
+.mainFlexBox .column-one--navbarText a {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+.mainFlexBox .column-one--navbarText a:hover {
+  color: #D91C1F;
+  text-decoration: underline;
+}
+.mainFlexBox .column-one--navbarInvisible {
+  background-color: #FFFFFF;
+}
+.mainFlexBox .workoutType {
+  display: flex;
+  background-color: #FFFFFF;
+  height: 10vh;
+  width: 70%;
+  margin: auto;
+  border: 1px #ccc solid;
+}
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .mainFlexBox .workoutType {
+    width: 100%;
+  }
+}
+.mainFlexBox .workoutMain {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  height: 50vh;
+  width: 70%;
+  background-color: #FFFFFF;
+  margin-top: 0px;
+}
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .mainFlexBox .workoutMain {
+    width: 100%;
+  }
+}
+.mainFlexBox .reps {
+  background-color: #f5f3f4;
+  margin: 10px;
+  height: 95%;
+  flex: 1;
+  border: 1px #ccc solid;
+}
+.mainFlexBox .workoutStyles {
+  background-color: #FFFFFF;
+  height: 95%;
+  margin: 10px;
+  margin-left: 10px;
+  flex: 4;
+  border: 1px #ccc solid;
+}
+.mainFlexBox .workoutStyles .tipsAndTricks {
+  background-color: #FFFFFF;
+  width: 15vw;
+  margin: auto;
+  margin-right: 10px;
+}
+.mainFlexBox .workoutStyles .tipsAndTricks--titleSettings p {
+  color: black;
+  text-indent: 0;
+  margin: 0;
+  text-align: left;
+}
+@media screen and (min-width: 481px) and (max-width: 1208px) {
+  .mainFlexBox .workoutStyles .tipsAndTricks--titleSettings {
+    width: 140px;
+  }
+}
+.mainFlexBox .workoutStyles .tipsAndTricks--titleSettings h4 {
+  font-size: 20px;
+}
+.mainFlexBox .workoutStyles .tipsAndTricks--titleSettings ul {
+  list-style-type: "→";
+  margin-right: 2px;
+}
+.mainFlexBox .workoutStyles .tipsAndTricks--titleSettings li {
+  text-align: left;
+}
+
+#tipsBtn {
+  border: none;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  background-color: #e7e7e7;
+  transition-duration: 0.4s;
+}
+
+#tipsBtn:hover {
+  background-color: #FFFFFF;
+  border: 2px solid #e7e7e7;
+  border-top: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* enable flow if needed */
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* #loadedContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    background-color: white;
+
+}
+   .tumb {
+       background-color: purple;
+       margin: 5px;
+       width: 45%;
+   } */
+ul {
+  list-style-type: none;
+}
+
+li {
+  color: #050505;
+  margin-bottom: 20px;
+  text-align: right;
+  margin-right: 15px;
+}
+
+.wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.column {
+  width: 40vw;
+  height: 40vh;
+  margin: 5px;
+  padding: 10px;
+  background-color: red;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .column {
+    width: 100%;
+    margin: 0px;
+  }
+}
+.column a {
+  font-size: 36px;
+  color: white;
+  font-family: "Secular One", sans-serif;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  display: block;
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .column a {
+    color: #F0F2EF;
+  }
+}
+.column:hover {
+  background-blend-mode: soft-light;
+}
+.column a:hover {
+  color: #F0F2EF;
+  text-shadow: 2px 2px 8px #F0F2EF;
+}
+.column--red a {
+  color: white;
+}
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .column--red a {
+    color: #F0F2EF;
+  }
+}
+.column--red a:hover {
+  color: #F0F2EF;
+}
+
+#bob-dylan {
+  background-image: url("../back.jpeg");
+  background-size: cover;
+  background-color: #e50000;
+  background-blend-mode: soft-light;
+  background-blend-mode: darken;
+  /* p {
+       font-size: 20px;
+       text-align: center;
+       margin-top: 80px;
+   }*/
+}
+
+#elvis-presley {
+  background-image: url("../arm.jpeg");
+  background-size: cover;
+  background-color: red;
+  background-blend-mode: soft-light;
+  background-blend-mode: darken;
+}
+
+#rodriguez {
+  background-image: url("../cardio.jpeg");
+  background-size: cover;
+  background-color: red;
+  background-blend-mode: soft-light;
+  background-blend-mode: darken;
+}
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  #rodriguez {
+    background-color: #e50000;
+  }
+}
+
+#creedence {
+  background-image: url("../legs.jpeg");
+  background-size: cover;
+  background-color: #e50000;
+  background-blend-mode: soft-light;
+  background-blend-mode: darken;
+}
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  #creedence {
+    background-color: red;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

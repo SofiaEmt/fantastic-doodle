@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chest & Back workout - Workout Generator</title>
+  <link rel="stylesheet" href="../STYLE/style.css">
+
+    <!-- Font family for header! SECULAR ONE-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Secular+One&display=swap" rel="stylesheet">
+
+ <!-- RUBIK 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&family=Secular+One&display=swap" rel="stylesheet">
+-->
+<!-- RUBIK LIGHT-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300&family=Secular+One&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Secular+One&family=Sonsie+One&display=swap" rel="stylesheet">
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<script>
+    function happy() {
+        generateRep();
+        generateWorkout();
+        icon();
+    }
+    
+</script>
+
+ </head>
+ <body  onload="happy()">
+ 
+
+    <div class="mainFlexBox">
+
+        <div class="headerBox">
+            <div class="name-of-website name-of-website--title">
+                <h1>Workout Generator </h1>
+            </div>
+        </div>
+        
+        <div class="workoutType">
+            <h1> Chest & Back workout</h1>
+            
+        </div>
+        
+
+        <div class="workoutMain">
+            
+            <!-- THIS IS THE RANDOMIZED AMOUNT OF REPS X SETS-->
+             <div class="reps">
+                 <ul id="repsList">
+                    
+                 </ul>
+             </div>
+
+             <!-- THIS IS THE CONTAINER FOR BUTTON AND RANDOMIZED WORKOUTS-->
+             <div class="workoutStyles">
+
+                <!-- THIS IS THE BUTTON -->
+                <div class="tipsAndTricks tipsAndTricks--titleSettings">
+                           <button id="tipsBtn">TIPS & TRICKS</button>
+                           <div id="tipsModal" class="modal modal--pSettings"> 
+                            <div class="modalContent">
+                                <span class="close">&times;</span>
+                                   <h4>Sets x Reps</h4>
+                                   <p> 4x10 means you should do 10 reps of a workout 4 times.<br>
+                                       The first number is the amount of sets.<br>
+                                        The second number is the amount of reps.
+                                     </p>
+
+                                     <h4>Break time</h4>
+                                     <ol>
+                                         <li>Between each set, try to stick to about a 30 seconds break. </li>
+                                         <li>If you work with a higher weight you could extend the break 
+                                             time between sets to about 1 minute depending on how your 
+                                             body responds to the chosen weight. 
+                                        </li>
+                                         <li>The length of the break depends on how intense you want 
+                                             the workout to be. </li>
+                                         <li>To increase performance value- you should not let your 
+                                             heart rate lower too much between sets. </li>
+                                         <li>Remember: listen to your body. </li>
+                                     </ol>
+
+                                     <h4>With a less amount of reps - the higher the weight</h4>
+                                     <p> When you do a workout with a small amount of reps (example: 4 sets x 5 reps)
+                                         the weight should be high enough to make your body challenged, 
+                                         even though the reps are low. 
+                                        <i>If you do 20kg on squats 4x10, you could try 40kg on 4x5</i></p>
+
+                                    <h4>If you don’t have access to high weights:</h4>
+                                    <p>Use the weights you have available and do each 
+                                        exercise with a slower, more controlled pace. This will put a big amount of tension to the muscles.<br>
+                                        <i>For example in a squat: 5 seconds going down, 5 seconds going up.</i></p>
+                                    
+                                    <h4>Overall tips</h4>
+                                    <ol>
+                                        <li>Keep your back/chest as straight as you can.</li>
+                                        <li>Hold your stomach tense.</li>
+                                        <li>In lower body exercises: balance and lift the weight from the heel.</li>
+                                        <li>Breath in a controlled manner.</li>
+                                        <li>Drink plenty of water.</li>
+                                    </ol>
+                                        
+                                        <center>
+                                        <h2>If you don´t know a workout listed: Google is your friend!</h2>
+                                        </center>
+                               </div>
+                           </div>
+                        </div>
+                        
+                        <!-- HERE THE CONTENT CAN BE PUT!-->
+                                    <ul id="listOfWorkouts">
+
+                                    </ul>
+                        </div>
+                        
+        </div>
+
+
+
+        <div class="navFlexBox"> 
+            <div class="column-one column-one--navbarText">
+                <a href="index.html">Back to main</a>
+            </div>
+            <!-- This column is here to just make up some space between links. -->
+            <div class="column-one column-one--navbarInvisible"></div>
+            <div class="column-one column-one--navbarText">
+                <a href="chest-back.html">Try another one!</a>
+            </div>
+        </div> 
+
+       
+
+   
+   
+    </div> 
+
+    <script src="../SCRIPT/script.js"></script>
+</body>
